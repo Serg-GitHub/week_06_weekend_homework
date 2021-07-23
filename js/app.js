@@ -15,3 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     event.target.reset();
   }  
+
+  const createGenreListItem = function (form) {
+    const genreListItem = document.createElement('li');
+    genreListItem.classList.add('genre-list-item');
