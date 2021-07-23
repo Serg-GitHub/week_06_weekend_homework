@@ -23,3 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameTitle = document.createElement('h2');
   gameTitle.textContent = form.gameTitle.value;
   genreListItem.appendChild(title);
+
+  const publisher = document.createElement('h3');
+  publisher.textContent = form.publisher.value;
+  genreListItem.appendChild(publisher);
