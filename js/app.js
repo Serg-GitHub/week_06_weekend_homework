@@ -27,3 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const publisher = document.createElement('h3');
   publisher.textContent = form.publisher.value;
   genreListItem.appendChild(publisher);
+
+  const genre = document.createElement('p');
+  genre.textContent = form.genre.value;
+  genreListItem.appendChild(genre);
