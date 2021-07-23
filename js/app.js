@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return gameListItem;
   }
   
-  const handleDeleteAllClick = function (_event) {
+  const handleDeleteAllClick = function () {
     const gameList = document.querySelector('#game-list');
     gameList.innerHTML = '';
   }
