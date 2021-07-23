@@ -31,3 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const genre = document.createElement('p');
   genre.textContent = form.genre.value;
   genreListItem.appendChild(genre);
+
+  return genreListItem;
+}
+
+const handleDeleteAllClick = function (event) {
+  const genreList = document.querySelector('#genre-list');
+  genreList.innerHTML = '';
+}
