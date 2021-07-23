@@ -19,3 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const createGenreListItem = function (form) {
     const genreListItem = document.createElement('li');
     genreListItem.classList.add('genre-list-item');
+
+    const gameTitle = document.createElement('h2');
+  gameTitle.textContent = form.gameTitle.value;
+  genreListItem.appendChild(title);
