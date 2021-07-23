@@ -6,3 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     deleteAllButton.addEventListener('click', handleDeleteAllClick);
   })
 
+  const handleNewItemFormSubmit = function (event) {
+    event.preventDefault();
+  
+    const genreListItem = createReadingListItem(event.target);
+    const genreList = document.querySelector('#genre-list');
+    genreList.appendChild(genreListItem);
+  
+    event.target.reset();
+  }  
